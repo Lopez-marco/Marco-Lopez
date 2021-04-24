@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+html {
+  background-color: #242424;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Hero-Area {
   color: white;
+  background-image: url(./assets/videoplaybackblack.gif);
+  background-color: transparent;
+  margin-bottom: 22px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.padding-area {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Name-area {
+  margin: 0;
+  display: block;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0em;
+  padding-bottom: -12px !important;
+}
+
+.developer {
+  letter-spacing: 12px;
+  font-size: 2rem;
+  font-weight: 400;
+  /* font-size: 30px */
+}
+
+.Quote-area {
+  letter-spacing: .2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.MuiDrawer-paper {
+  background: #242424 !important;
+  color: white !important;
 }
