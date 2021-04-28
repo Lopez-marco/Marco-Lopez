@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import { createStyles, makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
@@ -14,7 +14,6 @@ import ContactMailIcon from '@material-ui/icons/ContactMail';
 import {
   List,
   ListItem,
-  withStyles,
   Grid,
   SwipeableDrawer,
 } from "@material-ui/core";
@@ -73,7 +72,7 @@ const Navbar = (props) => {
   const createDrawer = () => {
     return (
       <div>
-        <AppBar position="static" style={{ background: "#2F2E36" }}>
+        <AppBar position="fixed" style={{ background: "#2F2E36", width: "100%" }}>
           <Toolbar>
             <Grid
               container
@@ -146,7 +145,7 @@ const Navbar = (props) => {
 
   const destroyDrawer = () => {
     return (
-      <AppBar position="static" style={{ background: "#2F2E36" }}>
+      <AppBar position="fixed" style={{ background: "#2F2E36", width: "100%"}}>
         <Toolbar>
           <IconButton
             edge="start"

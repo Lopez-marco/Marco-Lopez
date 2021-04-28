@@ -1,18 +1,21 @@
 import "./App.css";
-import { useQuery } from "react-query";
 import Container from "@material-ui/core/Container";
 import Particles from "react-particles-js";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import Portfolio from "./components/Portfolio";
 
 function App() {
   return (
     <div className="App">
       <div style={{ position: "absolute", zIndex: "-1" }}>
-        <Particles height="100vh" width="100vw"  params={{
+        <Particles height="450vh" width="100vw"  params={{
 	    "particles": {
 	        "number": {
-	            "value": 150
+	            "value": 250
 	        },
 	        "size": {
 	            "value": 5
@@ -34,6 +37,10 @@ function App() {
       <Container fixed>
         <Navbar />
         <Hero />
+        <AboutMe />
+        <Experience />
+        <Portfolio />
+        <Contact />
       </Container>
       </Container>
       </Container>
