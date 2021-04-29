@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     backgroundColor: "#262626",
-    paddingBottom: "15px",
+    paddingBottom: "1px",
   },
   experience: {
     paddingTop: "35px",
@@ -29,6 +29,9 @@ const useStyles = makeStyles((theme) => ({
   },
   image2: {
     alignItems: "center",
+    // paddingLeft: "100px",
+    // paddingRight:"70px",
+    // paddingTop: "25px",
   },
 }));
 
@@ -52,6 +55,7 @@ const Experience = (props) => {
           <Parallax
             animation={{ x: 0, opacity: 1, playScale: [0.3, 0.5] }}
             style={{ transform: "translateX(-100px)", opacity: 0 }}
+            // className="code-box-shape"
           >
             <Grid item xs={3} className={classes.image}>
               <img
@@ -61,11 +65,13 @@ const Experience = (props) => {
                 alt="HTML5 Powered"
                 title="HTML5 Powered"
               />
+              <p>html</p>
             </Grid>
           </Parallax>
           <Parallax
             animation={{ x: 0, opacity: 1, playScale: [0.3, 0.5] }}
             style={{ transform: "translateX(-100px)", opacity: 0 }}
+            // className="code-box-shape"
           >
             <Grid item xs={3} className={classes.image}>
               <img
@@ -75,11 +81,13 @@ const Experience = (props) => {
                 alt="CSS Logo"
                 title="CSS Logo"
               />
+              <p>html</p>
             </Grid>
           </Parallax>
           <Parallax
             animation={{ x: 0, opacity: 1, playScale: [0.3, 0.5] }}
             style={{ transform: "translateX(-100px)", opacity: 0 }}
+            // className="code-box-shape"
           >
             <Grid item xs={3} className={classes.image}>
               <img
@@ -89,11 +97,13 @@ const Experience = (props) => {
                 alt="JavaScript Logo"
                 title="JavaScript Logo"
               />
+              <p>html</p>
             </Grid>
           </Parallax>
           <Parallax
             animation={{ x: 0, opacity: 1, playScale: [0.3, 0.5] }}
             style={{ transform: "translateX(-100px)", opacity: 0 }}
+            // className="code-box-shape"
           >
             <Grid item xs={3} className={classes.image}>
               <img
@@ -103,6 +113,7 @@ const Experience = (props) => {
                 alt="Node"
                 title="Node"
               />
+              <p>html</p>
             </Grid>
           </Parallax>
         </Grid>
@@ -131,6 +142,7 @@ const Experience = (props) => {
           <Parallax
             animation={{ x: 0, opacity: 1, playScale: [0.3, 0.5] }}
             style={{ transform: "translateX(-100px)", opacity: 0 }}
+            // className="code-box-shape"
           >
             <Grid item xs={3} className={classes.image}>
               <img
@@ -160,12 +172,12 @@ const Experience = (props) => {
           <Parallax
             animation={{ x: 0, opacity: 1, playScale: [0.3, 0.5] }}
             style={{ transform: "translateX(-100px)", opacity: 0 }}
+            // className="code-box-shape"
           >
             <Grid item xs={3} className={classes.image}>
               <img src={GIT} width="63" height="64" alt="Node" title="Node" />
             </Grid>
           </Parallax>
-        <div id="portfolio"></div>
         </Grid>
       </Container>
     </div>

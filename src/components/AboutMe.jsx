@@ -120,6 +120,7 @@ const AboutMe = (props) => {
                   title="Resume"
                 />
               </a>
+              <p>Resume</p>
             </Grid>
             <Grid item sm={12} md={2} lg={2} className={classes.image}>
               <a href="https://github.com/Lopez-marco">
@@ -131,6 +132,7 @@ const AboutMe = (props) => {
                   title="Github"
                 />
               </a>
+              <p>git</p>
             </Grid>
             <Grid item sm={12} md={2} lg={2} className={classes.image}>
               <a href="https://www.linkedin.com/">
@@ -142,9 +144,11 @@ const AboutMe = (props) => {
                   title="Linkedin"
                 />
               </a>
+                <p>hello</p>
             </Grid>
             <Grid item sm={12} md={3} lg={3} className={classes.image}>
             </Grid>
+            
           </Grid>
         </Parallax>
       </Container>
