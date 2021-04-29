@@ -67,7 +67,7 @@ const Contact = (props) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="contact">
       <Container fixed>
         <Parallax
           animation={{ x: 0, opacity: 1, playScale: [0.3, 0.5] }}

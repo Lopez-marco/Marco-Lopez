@@ -17,6 +17,7 @@ const Hero = (props) => {
             <p class="Quote-area"><Texty duration="2000">Colossians 3:23</Texty></p>
             
           </div>
+      <div id="about"></div>
         </div>
       </div>
     </div>

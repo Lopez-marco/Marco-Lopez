@@ -55,7 +55,7 @@ const Portfolio = (div) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} >
       <Container fixed>
         <Grid item sm={12} md={12}>
           <Box className={classes.portfolio}>Portfolio</Box>

@@ -165,6 +165,7 @@ const Experience = (props) => {
               <img src={GIT} width="63" height="64" alt="Node" title="Node" />
             </Grid>
           </Parallax>
+        <div id="portfolio"></div>
         </Grid>
       </Container>
     </div>

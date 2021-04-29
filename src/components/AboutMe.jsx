@@ -45,8 +45,8 @@ const useStyles = makeStyles((theme) => ({
     // paddingBottom: "25px",
   },
   image: {
-    paddingBottom: "35px"
-  }
+    paddingBottom: "35px",
+  },
 }));
 
 const AboutMe = (props) => {
@@ -100,6 +100,7 @@ const AboutMe = (props) => {
                   get me in the right lane to concentrate in a new career and a
                   new future.
                 </p>
+                <div id="resume"></div>
               </Box>
             </Grid>
           </Grid>
@@ -107,16 +108,10 @@ const AboutMe = (props) => {
             <Box className={classes.WhereTo}>Find Me Also</Box>
           </Grid>
           <Grid container spacing={0} className={classes.findme}>
-          <Grid item sm={12} md={3} lg={3} className={classes.image}>
-                {/* <img
-                  src={Resume}
-                  width="63"
-                  height="64"
-                  alt="Resume"
-                  title="Resume"
-                /> */}
-              </Grid>
-              <Grid item sm={12} md={2} lg={2} className={classes.image}>
+            <Grid item sm={12} md={3} lg={3} className={classes.image}>
+            </Grid>
+            <Grid item sm={12} md={2} lg={2} className={classes.image}>
+              <a href="../assets/Marco Lopez.docx" download>
                 <img
                   src={Resume}
                   width="63"
@@ -124,8 +119,10 @@ const AboutMe = (props) => {
                   alt="Resume"
                   title="Resume"
                 />
-              </Grid>
-              <Grid item sm={12} md={2} lg={2} className={classes.image}>
+              </a>
+            </Grid>
+            <Grid item sm={12} md={2} lg={2} className={classes.image}>
+              <a href="https://github.com/Lopez-marco">
                 <img
                   src={Github}
                   width="63"
@@ -133,8 +130,10 @@ const AboutMe = (props) => {
                   alt="Github"
                   title="Github"
                 />
-              </Grid>
-              <Grid item sm={12} md={2} lg={2} className={classes.image}>
+              </a>
+            </Grid>
+            <Grid item sm={12} md={2} lg={2} className={classes.image}>
+              <a href="https://www.linkedin.com/">
                 <img
                   src={Link}
                   width="63"
@@ -142,16 +141,10 @@ const AboutMe = (props) => {
                   alt="Linkedin"
                   title="Linkedin"
                 />
-              </Grid>
-              <Grid item sm={12} md={3} lg={3} className={classes.image}>
-                {/* <img
-                  src={Resume}
-                  width="63"
-                  height="64"
-                  alt="Resume"
-                  title="Resume"
-                /> */}
-              </Grid>
+              </a>
+            </Grid>
+            <Grid item sm={12} md={3} lg={3} className={classes.image}>
+            </Grid>
           </Grid>
         </Parallax>
       </Container>

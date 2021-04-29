@@ -85,6 +85,7 @@ const Navbar = (props) => {
                 className={classes.menuButton}
                 color="inherit"
                 aria-label="menu"
+                href="/"
               >
                 <HomeIcon style={{ color: "#DF9B3A" }} />
               </IconButton>
@@ -152,20 +153,21 @@ const Navbar = (props) => {
             className={classes.menuButton}
             color="inherit"
             aria-label="menu"
+            href="/"
           >
             <HomeIcon style={{ color: "#DF9B3A" }} />
           </IconButton>
           <Typography variant="h6" className={classes.title}></Typography>
-          <Button color="inherit" className={classes.button}>
+          <Button color="inherit" className={classes.button} href="#about">
             About Me
           </Button>
-          <Button color="inherit" className={classes.button}>
+          <Button color="inherit" className={classes.button} href="#portfolio">
             Portfolio
           </Button>
-          <Button color="inherit" className={classes.button}>
+          <Button color="inherit" className={classes.button} href="#resume">
             Resume
           </Button>
-          <Button color="inherit" className={classes.button}>
+          <Button color="inherit" className={classes.button} href="#contact">
             Contact ME
           </Button>
         </Toolbar>
