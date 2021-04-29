@@ -4,16 +4,16 @@ import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import Me from "../assets/IMG-2400.jpg";
-import { Parallax } from 'rc-scroll-anim';
-import Resume from "../assets/cv (1).png"
-import Github from "../assets/github (1).png"
-import Link from "../assets/linkedin.png"
+import { Parallax } from "rc-scroll-anim";
+import Resume from "../assets/cv (1).png";
+import Github from "../assets/github (1).png";
+import Link from "../assets/linkedin.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     backgroundColor: "#2F2E36",
-    paddingBottom: "1px"
+    paddingBottom: "1px",
   },
   paper: {
     paddingTop: "45px",
@@ -41,7 +41,11 @@ const useStyles = makeStyles((theme) => ({
   },
   findme: {
     alignItems: "center",
-    textAlign: "center"
+    textAlign: "center",
+    // paddingBottom: "25px",
+  },
+  image: {
+    paddingBottom: "35px"
   }
 }));
 
@@ -52,7 +56,7 @@ const AboutMe = (props) => {
     <div className={classes.root}>
       <Container fixed>
         <Parallax
-          animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+          animation={{ x: 0, opacity: 1, playScale: [0.3, 0.9] }}
           style={{ transform: "translateX(-100px)", opacity: 0 }}
           className="code-box-shape"
         >
@@ -62,8 +66,12 @@ const AboutMe = (props) => {
           <Grid container spacing={3}>
             <Grid item xs={12} sm={12} md={4} lg={4}>
               <Box className={classes.paper}>
-                <img className="mePicture" src={Me}                 alt="Marco Lopez"
-                title="Marco Lopez"></img>
+                <img
+                  className="mePicture"
+                  src={Me}
+                  alt="Marco Lopez"
+                  title="Marco Lopez"
+                ></img>
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={8} lg={8}>
@@ -98,16 +106,52 @@ const AboutMe = (props) => {
           <Grid item sm={12} md={12}>
             <Box className={classes.WhereTo}>Find Me Also</Box>
           </Grid>
-          <Grid container spacing={3} className={classes.findme}>
-            <Grid item sm={12} md={6} lg={4}>
-Hello
-            </Grid>
-            <Grid item sm={12} md={6} lg={4}>
-Hello
-            </Grid>
-            <Grid item sm={12} md={6} lg={4}>
-Hello
-            </Grid>
+          <Grid container spacing={0} className={classes.findme}>
+          <Grid item sm={12} md={3} lg={3} className={classes.image}>
+                {/* <img
+                  src={Resume}
+                  width="63"
+                  height="64"
+                  alt="Resume"
+                  title="Resume"
+                /> */}
+              </Grid>
+              <Grid item sm={12} md={2} lg={2} className={classes.image}>
+                <img
+                  src={Resume}
+                  width="63"
+                  height="64"
+                  alt="Resume"
+                  title="Resume"
+                />
+              </Grid>
+              <Grid item sm={12} md={2} lg={2} className={classes.image}>
+                <img
+                  src={Github}
+                  width="63"
+                  height="64"
+                  alt="Github"
+                  title="Github"
+                />
+              </Grid>
+              <Grid item sm={12} md={2} lg={2} className={classes.image}>
+                <img
+                  src={Link}
+                  width="63"
+                  height="64"
+                  alt="Linkedin"
+                  title="Linkedin"
+                />
+              </Grid>
+              <Grid item sm={12} md={3} lg={3} className={classes.image}>
+                {/* <img
+                  src={Resume}
+                  width="63"
+                  height="64"
+                  alt="Resume"
+                  title="Resume"
+                /> */}
+              </Grid>
           </Grid>
         </Parallax>
       </Container>

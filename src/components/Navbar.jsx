@@ -11,9 +11,6 @@ import InfoIcon from '@material-ui/icons/Info';
 import FolderSharedIcon from '@material-ui/icons/FolderShared';
 import AttachmentIcon from '@material-ui/icons/Attachment';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
-import Resume from "../assets/cv (1).png"
-import Github from "../assets/github (1).png"
-import Link from "../assets/linkedin.png"
 import {
   List,
   ListItem,

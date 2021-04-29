@@ -11,6 +11,11 @@ import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import Static from "../assets/2020-06-23-18-32-lopez-marco.github.io.png";
+import Taste from "../assets/2020-06-23-18-39-mal-api.firebaseapp.com (1).png"
+import Car from "../assets/2020-09-04-22-40-mal-caroclockfront2.herokuapp.com.png"
+import Delicioso from "../assets/2020-12-07-12-53-deliciosocart-server.herokuapp.com.png"
+import Templo from "../assets/2021-02-24-14-19-www.templobetel.us.png"
+import Keliz from "../assets/2021-03-12-20-39-keilizcakesupplies.com (1).png"
 import { Parallax } from "rc-scroll-anim";
 
 const useStyles = makeStyles({
@@ -86,9 +91,9 @@ const Portfolio = (div) => {
                   <Button
                     variant="contained"
                     className={classes.button}
-                    size="small"
+                    size="small" href="https://lopez-marco.github.io/staticLayout-hulus/" target="_blank"
                   >
-                    Share
+                    Visit Site
                   </Button>
                 </CardActions>
               </Card>
@@ -107,7 +112,7 @@ const Portfolio = (div) => {
                   component="img"
                   alt="Contemplative Reptile"
                   height="140"
-                  image={Static}
+                  image={Taste}
                   title="Contemplative Reptile"
                   />
                 <CardContent className={classes.content}>
@@ -124,8 +129,10 @@ const Portfolio = (div) => {
                   variant="contained"
                   className={classes.button}
                   size="small"
+                  href="https://mal-api.firebaseapp.com/"
+                  target="_blank"
                   >
-                  Share
+                  Visit Site
                 </Button>
               </CardActions>
             </Card>
@@ -144,7 +151,7 @@ const Portfolio = (div) => {
                   component="img"
                   alt="Contemplative Reptile"
                   height="140"
-                  image={Static}
+                  image={Car}
                   title="Contemplative Reptile"
                   />
                 <CardContent className={classes.content}>
@@ -162,8 +169,10 @@ const Portfolio = (div) => {
                   variant="contained"
                   className={classes.button}
                   size="small"
+                  href="https://mal-caroclockfront2.herokuapp.com/"
+                  target="_blank"
                   >
-                  Share
+                  Visit Site
                 </Button>
               </CardActions>
             </Card>
@@ -184,7 +193,7 @@ const Portfolio = (div) => {
                   component="img"
                   alt="Contemplative Reptile"
                   height="140"
-                  image={Static}
+                  image={Templo}
                   title="Contemplative Reptile"
                 />
                 <CardContent className={classes.content}>
@@ -201,8 +210,10 @@ const Portfolio = (div) => {
                   variant="contained"
                   className={classes.button}
                   size="small"
+                  href="http://www.templobetel.us/"
+                  target="_blank"
                   >
-                  Share
+                  Visit Site
                 </Button>
               </CardActions>
             </Card>
@@ -221,7 +232,7 @@ const Portfolio = (div) => {
                   component="img"
                   alt="Contemplative Reptile"
                   height="140"
-                  image={Static}
+                  image={Keliz}
                   title="Contemplative Reptile"
                   />
                 <CardContent className={classes.content}>
@@ -239,8 +250,10 @@ const Portfolio = (div) => {
                   variant="contained"
                   className={classes.button}
                   size="small"
+                  href="https://keilizcakesupplies.com/"
+                  target="_blank"
                   >
-                  Share
+                  Visit Site
                 </Button>
               </CardActions>
             </Card>
@@ -259,7 +272,7 @@ const Portfolio = (div) => {
                   component="img"
                   alt="Contemplative Reptile"
                   height="140"
-                  image={Static}
+                  image={Delicioso}
                   title="Contemplative Reptile"
                   />
                 <CardContent className={classes.content}>
@@ -278,8 +291,10 @@ const Portfolio = (div) => {
                   variant="contained"
                   className={classes.button}
                   size="small"
+                  href="https://deliciosocart-server.herokuapp.com/"
+                  target="_blank"
                   >
-                  Share
+                  Visit site
                 </Button>
               </CardActions>
             </Card>

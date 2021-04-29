@@ -29,9 +29,6 @@ const useStyles = makeStyles((theme) => ({
   },
   image2: {
     alignItems: "center",
-    // paddingLeft: "100px",
-    // paddingRight:"70px",
-    // paddingTop: "25px",
   },
 }));
 
@@ -55,7 +52,6 @@ const Experience = (props) => {
           <Parallax
             animation={{ x: 0, opacity: 1, playScale: [0.3, 0.5] }}
             style={{ transform: "translateX(-100px)", opacity: 0 }}
-            // className="code-box-shape"
           >
             <Grid item xs={3} className={classes.image}>
               <img
@@ -70,7 +66,6 @@ const Experience = (props) => {
           <Parallax
             animation={{ x: 0, opacity: 1, playScale: [0.3, 0.5] }}
             style={{ transform: "translateX(-100px)", opacity: 0 }}
-            // className="code-box-shape"
           >
             <Grid item xs={3} className={classes.image}>
               <img
@@ -85,7 +80,6 @@ const Experience = (props) => {
           <Parallax
             animation={{ x: 0, opacity: 1, playScale: [0.3, 0.5] }}
             style={{ transform: "translateX(-100px)", opacity: 0 }}
-            // className="code-box-shape"
           >
             <Grid item xs={3} className={classes.image}>
               <img
@@ -100,7 +94,6 @@ const Experience = (props) => {
           <Parallax
             animation={{ x: 0, opacity: 1, playScale: [0.3, 0.5] }}
             style={{ transform: "translateX(-100px)", opacity: 0 }}
-            // className="code-box-shape"
           >
             <Grid item xs={3} className={classes.image}>
               <img
@@ -138,7 +131,6 @@ const Experience = (props) => {
           <Parallax
             animation={{ x: 0, opacity: 1, playScale: [0.3, 0.5] }}
             style={{ transform: "translateX(-100px)", opacity: 0 }}
-            // className="code-box-shape"
           >
             <Grid item xs={3} className={classes.image}>
               <img
@@ -168,7 +160,6 @@ const Experience = (props) => {
           <Parallax
             animation={{ x: 0, opacity: 1, playScale: [0.3, 0.5] }}
             style={{ transform: "translateX(-100px)", opacity: 0 }}
-            // className="code-box-shape"
           >
             <Grid item xs={3} className={classes.image}>
               <img src={GIT} width="63" height="64" alt="Node" title="Node" />
