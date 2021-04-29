@@ -10,14 +10,15 @@ import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
-import Static from "../assets/2020-06-23-18-32-lopez-marco.github.io.png"
+import Static from "../assets/2020-06-23-18-32-lopez-marco.github.io.png";
+import { Parallax } from "rc-scroll-anim";
 
 const useStyles = makeStyles({
   root: {
     backgroundColor: "#2F2E36",
     paddingBottom: "45px",
     paddingRight: "50px",
-    paddingLeft: "50px"
+    paddingLeft: "50px",
   },
   portfolio: {
     textAlign: "center",
@@ -26,23 +27,23 @@ const useStyles = makeStyles({
     paddingBottom: "45px",
   },
   card: {
-      color: "white",
-      backgroundColor: "#262626",
-      border: `1px solid black`,
-      borderRadius: "10px",
+    color: "white",
+    backgroundColor: "#262626",
+    border: `1px solid black`,
+    borderRadius: "10px",
     transition: "0.3s",
     boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)",
     "&:hover": {
-      boxShadow: "0 16px 70px -12.125px rgba(0,0,0,0.3)"
-    }
+      boxShadow: "0 16px 70px -12.125px rgba(0,0,0,0.3)",
+    },
   },
   content: {
-      height: "135px",
-      color: "white",
+    height: "135px",
+    color: "white",
   },
   button: {
-      backgroundColor: "#DF9B3A"
-  }
+    backgroundColor: "#DF9B3A",
+  },
 });
 
 const Portfolio = (div) => {
@@ -56,38 +57,50 @@ const Portfolio = (div) => {
         </Grid>
         <Grid container spacing={4}>
           <Grid item sm={12} md={6} lg={4}>
-            <Card className={classes.card}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  alt="Contemplative Reptile"
-                  height="140"
-                  image={Static}
-                  title="Contemplative Reptile"
-                />
-                <CardContent className={classes.content}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Static Layout
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="#7C7C7F"
-                    component="p"
+            <Parallax
+              animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+              style={{ transform: "translateX(-100px)", opacity: 0 }}
+              className="code-box-shape"
+            >
+              <Card className={classes.card}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    alt="Contemplative Reptile"
+                    height="140"
+                    image={Static}
+                    title="Contemplative Reptile"
+                  />
+                  <CardContent className={classes.content}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Static Layout
+                    </Typography>
+                    <Typography variant="body2" color="#7C7C7F" component="p">
+                      This is my first project as a student atending to Eleven
+                      Fifty Academy. here you can see a miror webpage of the
+                      Hulu front page.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button
+                    variant="contained"
+                    className={classes.button}
+                    size="small"
                   >
-                    This is my first project as a student atending 
-                    to Eleven Fifty Academy. here you can see a miror 
-                    webpage of the Hulu front page.
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button variant="contained" className={classes.button} size="small">
-                  Share
-                </Button>
-              </CardActions>
-            </Card>
+                    Share
+                  </Button>
+                </CardActions>
+              </Card>
+            </Parallax>
           </Grid>
           <Grid item sm={12} md={6} lg={4}>
+          <Parallax
+          animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+          style={{ transform: "translateY(0px)", opacity: 0 }}
+          className="code-box-shape"
+        >
+
             <Card className={classes.card}>
               <CardActionArea>
                 <CardMedia
@@ -96,28 +109,35 @@ const Portfolio = (div) => {
                   height="140"
                   image={Static}
                   title="Contemplative Reptile"
-                />
+                  />
                 <CardContent className={classes.content}>
                   <Typography gutterBottom variant="h5" component="h2">
                     API project
                   </Typography>
-                  <Typography
-                    variant="body2"
-                    color="#7C7C7F"
-                    component="p"
-                  >
+                  <Typography variant="body2" color="#7C7C7F" component="p">
                     Taste the Food project. A website app to find recipes.
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button variant="contained" className={classes.button} size="small">
+                <Button
+                  variant="contained"
+                  className={classes.button}
+                  size="small"
+                  >
                   Share
                 </Button>
               </CardActions>
             </Card>
+                  </Parallax>
           </Grid>
           <Grid item sm={12} md={6} lg={4}>
+          <Parallax
+          animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+          style={{ transform: "translateX(100px)", opacity: 0 }}
+          className="code-box-shape"
+        >
+
             <Card className={classes.card}>
               <CardActionArea>
                 <CardMedia
@@ -126,30 +146,38 @@ const Portfolio = (div) => {
                   height="140"
                   image={Static}
                   title="Contemplative Reptile"
-                />
+                  />
                 <CardContent className={classes.content}>
                   <Typography gutterBottom variant="h5" component="h2">
                     Car-O-Clock
                   </Typography>
-                  <Typography
-                    variant="body2"
-                    color="#7C7C7F"
-                    component="p"
-                  >
-                    WebSide develop with NodeJS, React & Reactstrap. A WebSide for Vehicle Sales.
+                  <Typography variant="body2" color="#7C7C7F" component="p">
+                    WebSide develop with NodeJS, React & Reactstrap. A WebSide
+                    for Vehicle Sales.
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button variant="contained" className={classes.button} size="small">
+                <Button
+                  variant="contained"
+                  className={classes.button}
+                  size="small"
+                  >
                   Share
                 </Button>
               </CardActions>
             </Card>
+                    </Parallax>
           </Grid>
         </Grid>
         <Grid container spacing={4}>
           <Grid item sm={12} md={6} lg={4}>
+          <Parallax
+              animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+              style={{ transform: "translateX(-100px)", opacity: 0 }}
+              className="code-box-shape"
+            >
+                
             <Card className={classes.card}>
               <CardActionArea>
                 <CardMedia
@@ -163,23 +191,30 @@ const Portfolio = (div) => {
                   <Typography gutterBottom variant="h5" component="h2">
                     Templo Betel
                   </Typography>
-                  <Typography
-                    variant="body2"
-                    color="#7C7C7F"
-                    component="p"
-                  >
+                  <Typography variant="body2" color="#7C7C7F" component="p">
                     WebSite develop with NodeJS, React & Reactstrap
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button variant="contained" className={classes.button} size="small">
+                <Button
+                  variant="contained"
+                  className={classes.button}
+                  size="small"
+                  >
                   Share
                 </Button>
               </CardActions>
             </Card>
+                    </Parallax>
           </Grid>
           <Grid item sm={12} md={6} lg={4}>
+          <Parallax
+              animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+              style={{ transform: "translateY(0px)", opacity: 0 }}
+              className="code-box-shape"
+            >
+
             <Card className={classes.card}>
               <CardActionArea>
                 <CardMedia
@@ -188,28 +223,36 @@ const Portfolio = (div) => {
                   height="140"
                   image={Static}
                   title="Contemplative Reptile"
-                />
+                  />
                 <CardContent className={classes.content}>
                   <Typography gutterBottom variant="h5" component="h2">
                     Keliz Cake Supplies
                   </Typography>
-                  <Typography
-                    variant="body2"
-                    color="#7C7C7F"
-                    component="p"
-                  >
-                    Simple responsive Website create with Html, Css, and Bootstrap
+                  <Typography variant="body2" color="#7C7C7F" component="p">
+                    Simple responsive Website create with Html, Css, and
+                    Bootstrap
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button variant="contained" className={classes.button} size="small">
+                <Button
+                  variant="contained"
+                  className={classes.button}
+                  size="small"
+                  >
                   Share
                 </Button>
               </CardActions>
             </Card>
+                    </Parallax>
           </Grid>
           <Grid item sm={12} md={6} lg={4}>
+          <Parallax
+              animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+              style={{ transform: "translateX(100px)", opacity: 0 }}
+              className="code-box-shape"
+            >
+
             <Card className={classes.card}>
               <CardActionArea>
                 <CardMedia
@@ -218,28 +261,29 @@ const Portfolio = (div) => {
                   height="140"
                   image={Static}
                   title="Contemplative Reptile"
-                />
+                  />
                 <CardContent className={classes.content}>
                   <Typography gutterBottom variant="h5" component="h2">
                     DeliciosoCart
                   </Typography>
-                  <Typography
-                    variant="body2"
-                    color="#7C7C7F"
-                    component="p"
-                  >
-                    WebSide develop with NodeJS, React, Material-Ui, and Typescript. 
-                    A website for people who likes to save.
-                     Manufacturing coupons, store finder a Shopping List.
+                  <Typography variant="body2" color="#7C7C7F" component="p">
+                    WebSide develop with NodeJS, React, Material-Ui, and
+                    Typescript. A website for people who likes to save.
+                    Manufacturing coupons, store finder a Shopping List.
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button variant="contained" className={classes.button} size="small">
+                <Button
+                  variant="contained"
+                  className={classes.button}
+                  size="small"
+                  >
                   Share
                 </Button>
               </CardActions>
             </Card>
+                    </Parallax>
           </Grid>
         </Grid>
       </Container>

@@ -5,6 +5,9 @@ import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import Me from "../assets/IMG-2400.jpg";
 import { Parallax } from 'rc-scroll-anim';
+import Resume from "../assets/cv (1).png"
+import Github from "../assets/github (1).png"
+import Link from "../assets/linkedin.png"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,6 +39,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "transparent",
     borderColor: "",
   },
+  findme: {
+    alignItems: "center",
+    textAlign: "center"
+  }
 }));
 
 const AboutMe = (props) => {
@@ -90,6 +97,17 @@ const AboutMe = (props) => {
           </Grid>
           <Grid item sm={12} md={12}>
             <Box className={classes.WhereTo}>Find Me Also</Box>
+          </Grid>
+          <Grid container spacing={3} className={classes.findme}>
+            <Grid item sm={12} md={6} lg={4}>
+Hello
+            </Grid>
+            <Grid item sm={12} md={6} lg={4}>
+Hello
+            </Grid>
+            <Grid item sm={12} md={6} lg={4}>
+Hello
+            </Grid>
           </Grid>
         </Parallax>
       </Container>

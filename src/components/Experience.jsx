@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     backgroundColor: "#262626",
-    paddingBottom: "1px",
+    paddingBottom: "15px",
   },
   experience: {
     paddingTop: "35px",
