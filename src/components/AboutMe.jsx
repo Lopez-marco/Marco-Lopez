@@ -49,8 +49,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     color: "white",
-    paddingLeft: "2px"
-  }
+    paddingLeft: "2px",
+  },
 }));
 
 const AboutMe = (props) => {
@@ -112,8 +112,7 @@ const AboutMe = (props) => {
             <Box className={classes.WhereTo}>Find Me Also</Box>
           </Grid>
           <Grid container spacing={0} className={classes.findme}>
-            <Grid item sm={12} md={3} lg={3} className={classes.image}>
-            </Grid>
+            <Grid item sm={12} md={3} lg={3} className={classes.image}></Grid>
             <Grid item sm={12} md={2} lg={2} className={classes.image}>
               <a href="../assets/Marco Lopez.docx" download>
                 <img
@@ -148,11 +147,9 @@ const AboutMe = (props) => {
                   title="Linkedin"
                 />
               </a>
-                <p className={classes.title}>LinkedIn</p>
+              <p className={classes.title}>LinkedIn</p>
             </Grid>
-            <Grid item sm={12} md={3} lg={3} className={classes.image}>
-            </Grid>
-            
+            <Grid item sm={12} md={3} lg={3} className={classes.image}></Grid>
           </Grid>
         </Parallax>
       </Container>

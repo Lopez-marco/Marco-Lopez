@@ -1,5 +1,5 @@
 html {
-  background-color: #2C2A35;
+  background-color: #2c2a35;
 }
 
 .Hero-Area {
@@ -38,7 +38,7 @@ html {
 }
 
 .Quote-area {
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -48,7 +48,7 @@ html {
 }
 .About-Area {
   /* margin-top: 2rem; */
-  background: #2F2E36;
+  background: #2f2e36;
 }
 
 .mePicture {
@@ -66,8 +66,22 @@ html {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  /* -webkit-transform: rotateZ(-5deg);
-  -ms-transform: rotateZ(-5deg);
-  transform: rotateZ(-5deg);*/
+}
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 0.8rem;
+  right: 0.8rem;
+  animation: fadeIn 700ms ease-in-out 1s both;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

@@ -11,11 +11,11 @@ import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import Static from "../assets/2020-06-23-18-32-lopez-marco.github.io.png";
-import Taste from "../assets/2020-06-23-18-39-mal-api.firebaseapp.com (1).png"
-import Car from "../assets/2020-09-04-22-40-mal-caroclockfront2.herokuapp.com.png"
-import Delicioso from "../assets/2020-12-07-12-53-deliciosocart-server.herokuapp.com.png"
-import Templo from "../assets/2021-02-24-14-19-www.templobetel.us.png"
-import Keliz from "../assets/2021-03-12-20-39-keilizcakesupplies.com (1).png"
+import Taste from "../assets/2020-06-23-18-39-mal-api.firebaseapp.com (1).png";
+import Car from "../assets/2020-09-04-22-40-mal-caroclockfront2.herokuapp.com.png";
+import Delicioso from "../assets/2020-12-07-12-53-deliciosocart-server.herokuapp.com.png";
+import Templo from "../assets/2021-02-24-14-19-www.templobetel.us.png";
+import Keliz from "../assets/2021-03-12-20-39-keilizcakesupplies.com (1).png";
 import { Parallax } from "rc-scroll-anim";
 
 const useStyles = makeStyles({
@@ -55,7 +55,7 @@ const Portfolio = (div) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root} >
+    <div className={classes.root}>
       <Container fixed>
         <Grid item sm={12} md={12}>
           <Box className={classes.portfolio}>Portfolio</Box>
@@ -91,7 +91,9 @@ const Portfolio = (div) => {
                   <Button
                     variant="contained"
                     className={classes.button}
-                    size="small" href="https://lopez-marco.github.io/staticLayout-hulus/" target="_blank"
+                    size="small"
+                    href="https://lopez-marco.github.io/staticLayout-hulus/"
+                    target="_blank"
                   >
                     Visit Site
                   </Button>
@@ -100,205 +102,200 @@ const Portfolio = (div) => {
             </Parallax>
           </Grid>
           <Grid item sm={12} md={6} lg={4}>
-          <Parallax
-          animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
-          style={{ transform: "translateY(0px)", opacity: 0 }}
-          className="code-box-shape"
-        >
-
-            <Card className={classes.card}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  alt="Contemplative Reptile"
-                  height="140"
-                  image={Taste}
-                  title="Contemplative Reptile"
-                  />
-                <CardContent className={classes.content}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    API project
-                  </Typography>
-                  <Typography variant="body2" color="#7C7C7F" component="p">
-                    Taste the Food project. A website app to find recipes.
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button
-                  variant="contained"
-                  className={classes.button}
-                  size="small"
-                  href="https://mal-api.firebaseapp.com/"
-                  target="_blank"
-                  >
-                  Visit Site
-                </Button>
-              </CardActions>
-            </Card>
-                  </Parallax>
-          </Grid>
-          <Grid item sm={12} md={6} lg={4}>
-          <Parallax
-          animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
-          style={{ transform: "translateX(100px)", opacity: 0 }}
-          className="code-box-shape"
-        >
-
-            <Card className={classes.card}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  alt="Contemplative Reptile"
-                  height="140"
-                  image={Car}
-                  title="Contemplative Reptile"
-                  />
-                <CardContent className={classes.content}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Car-O-Clock
-                  </Typography>
-                  <Typography variant="body2" color="#7C7C7F" component="p">
-                    WebSide develop with NodeJS, React & Reactstrap. A WebSide
-                    for Vehicle Sales.
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button
-                  variant="contained"
-                  className={classes.button}
-                  size="small"
-                  href="https://mal-caroclockfront2.herokuapp.com/"
-                  target="_blank"
-                  >
-                  Visit Site
-                </Button>
-              </CardActions>
-            </Card>
-                    </Parallax>
-          </Grid>
-        </Grid>
-        <Grid container spacing={4}>
-          <Grid item sm={12} md={6} lg={4}>
-          <Parallax
-              animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
-              style={{ transform: "translateX(-100px)", opacity: 0 }}
-              className="code-box-shape"
-            >
-                
-            <Card className={classes.card}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  alt="Contemplative Reptile"
-                  height="140"
-                  image={Templo}
-                  title="Contemplative Reptile"
-                />
-                <CardContent className={classes.content}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Templo Betel
-                  </Typography>
-                  <Typography variant="body2" color="#7C7C7F" component="p">
-                    WebSite develop with NodeJS, React & Reactstrap
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button
-                  variant="contained"
-                  className={classes.button}
-                  size="small"
-                  href="http://www.templobetel.us/"
-                  target="_blank"
-                  >
-                  Visit Site
-                </Button>
-              </CardActions>
-            </Card>
-                    </Parallax>
-          </Grid>
-          <Grid item sm={12} md={6} lg={4}>
-          <Parallax
+            <Parallax
               animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
               style={{ transform: "translateY(0px)", opacity: 0 }}
               className="code-box-shape"
             >
-
-            <Card className={classes.card}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  alt="Contemplative Reptile"
-                  height="140"
-                  image={Keliz}
-                  title="Contemplative Reptile"
+              <Card className={classes.card}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    alt="Contemplative Reptile"
+                    height="140"
+                    image={Taste}
+                    title="Contemplative Reptile"
                   />
-                <CardContent className={classes.content}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Keliz Cake Supplies
-                  </Typography>
-                  <Typography variant="body2" color="#7C7C7F" component="p">
-                    Simple responsive Website create with Html, Css, and
-                    Bootstrap
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button
-                  variant="contained"
-                  className={classes.button}
-                  size="small"
-                  href="https://keilizcakesupplies.com/"
-                  target="_blank"
+                  <CardContent className={classes.content}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      API project
+                    </Typography>
+                    <Typography variant="body2" color="#7C7C7F" component="p">
+                      Taste the Food project. A website app to find recipes.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button
+                    variant="contained"
+                    className={classes.button}
+                    size="small"
+                    href="https://mal-api.firebaseapp.com/"
+                    target="_blank"
                   >
-                  Visit Site
-                </Button>
-              </CardActions>
-            </Card>
-                    </Parallax>
+                    Visit Site
+                  </Button>
+                </CardActions>
+              </Card>
+            </Parallax>
           </Grid>
           <Grid item sm={12} md={6} lg={4}>
-          <Parallax
+            <Parallax
               animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
               style={{ transform: "translateX(100px)", opacity: 0 }}
               className="code-box-shape"
             >
-
-            <Card className={classes.card}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  alt="Contemplative Reptile"
-                  height="140"
-                  image={Delicioso}
-                  title="Contemplative Reptile"
+              <Card className={classes.card}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    alt="Contemplative Reptile"
+                    height="140"
+                    image={Car}
+                    title="Contemplative Reptile"
                   />
-                <CardContent className={classes.content}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    DeliciosoCart
-                  </Typography>
-                  <Typography variant="body2" color="#7C7C7F" component="p">
-                    WebSide develop with NodeJS, React, Material-Ui, and
-                    Typescript. A website for people who likes to save.
-                    Manufacturing coupons, store finder a Shopping List.
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button
-                  variant="contained"
-                  className={classes.button}
-                  size="small"
-                  href="https://deliciosocart-server.herokuapp.com/"
-                  target="_blank"
+                  <CardContent className={classes.content}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Car-O-Clock
+                    </Typography>
+                    <Typography variant="body2" color="#7C7C7F" component="p">
+                      WebSide develop with NodeJS, React & Reactstrap. A WebSide
+                      for Vehicle Sales.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button
+                    variant="contained"
+                    className={classes.button}
+                    size="small"
+                    href="https://mal-caroclockfront2.herokuapp.com/"
+                    target="_blank"
                   >
-                  Visit site
-                </Button>
-              </CardActions>
-            </Card>
-                    </Parallax>
+                    Visit Site
+                  </Button>
+                </CardActions>
+              </Card>
+            </Parallax>
+          </Grid>
+        </Grid>
+        <Grid container spacing={4}>
+          <Grid item sm={12} md={6} lg={4}>
+            <Parallax
+              animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+              style={{ transform: "translateX(-100px)", opacity: 0 }}
+              className="code-box-shape"
+            >
+              <Card className={classes.card}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    alt="Contemplative Reptile"
+                    height="140"
+                    image={Templo}
+                    title="Contemplative Reptile"
+                  />
+                  <CardContent className={classes.content}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Templo Betel
+                    </Typography>
+                    <Typography variant="body2" color="#7C7C7F" component="p">
+                      WebSite develop with NodeJS, React & Reactstrap
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button
+                    variant="contained"
+                    className={classes.button}
+                    size="small"
+                    href="http://www.templobetel.us/"
+                    target="_blank"
+                  >
+                    Visit Site
+                  </Button>
+                </CardActions>
+              </Card>
+            </Parallax>
+          </Grid>
+          <Grid item sm={12} md={6} lg={4}>
+            <Parallax
+              animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+              style={{ transform: "translateY(0px)", opacity: 0 }}
+              className="code-box-shape"
+            >
+              <Card className={classes.card}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    alt="Contemplative Reptile"
+                    height="140"
+                    image={Keliz}
+                    title="Contemplative Reptile"
+                  />
+                  <CardContent className={classes.content}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Keliz Cake Supplies
+                    </Typography>
+                    <Typography variant="body2" color="#7C7C7F" component="p">
+                      Simple responsive Website create with Html, Css, and
+                      Bootstrap
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button
+                    variant="contained"
+                    className={classes.button}
+                    size="small"
+                    href="https://keilizcakesupplies.com/"
+                    target="_blank"
+                  >
+                    Visit Site
+                  </Button>
+                </CardActions>
+              </Card>
+            </Parallax>
+          </Grid>
+          <Grid item sm={12} md={6} lg={4}>
+            <Parallax
+              animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+              style={{ transform: "translateX(100px)", opacity: 0 }}
+              className="code-box-shape"
+            >
+              <Card className={classes.card}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    alt="Contemplative Reptile"
+                    height="140"
+                    image={Delicioso}
+                    title="Contemplative Reptile"
+                  />
+                  <CardContent className={classes.content}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      DeliciosoCart
+                    </Typography>
+                    <Typography variant="body2" color="#7C7C7F" component="p">
+                      WebSide develop with NodeJS, React, Material-Ui, and
+                      Typescript. A website for people who likes to save.
+                      Manufacturing coupons, store finder a Shopping List.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button
+                    variant="contained"
+                    className={classes.button}
+                    size="small"
+                    href="https://deliciosocart-server.herokuapp.com/"
+                    target="_blank"
+                  >
+                    Visit site
+                  </Button>
+                </CardActions>
+              </Card>
+            </Parallax>
           </Grid>
         </Grid>
       </Container>

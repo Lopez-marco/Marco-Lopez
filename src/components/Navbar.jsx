@@ -7,16 +7,11 @@ import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import HomeIcon from "@material-ui/icons/Home";
 import MenuIcon from "@material-ui/icons/Menu";
-import InfoIcon from '@material-ui/icons/Info';
-import FolderSharedIcon from '@material-ui/icons/FolderShared';
-import AttachmentIcon from '@material-ui/icons/Attachment';
-import ContactMailIcon from '@material-ui/icons/ContactMail';
-import {
-  List,
-  ListItem,
-  Grid,
-  SwipeableDrawer,
-} from "@material-ui/core";
+import InfoIcon from "@material-ui/icons/Info";
+import FolderSharedIcon from "@material-ui/icons/FolderShared";
+import AttachmentIcon from "@material-ui/icons/Attachment";
+import ContactMailIcon from "@material-ui/icons/ContactMail";
+import { List, ListItem, Grid, SwipeableDrawer } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -33,19 +28,18 @@ const useStyles = makeStyles((theme) =>
       backgroundColor: "",
       "&:hover": {
         backgroundColor: "#DF9B3A",
-        
       },
     },
     list: {
-        width: 250,
-        marginRight: "2px"
-      },
-      fullList: {
-        width: 'auto',
-      },
-      drawerPaper: {
-        color: "blue",
-      },
+      width: 250,
+      marginRight: "2px",
+    },
+    fullList: {
+      width: "auto",
+    },
+    drawerPaper: {
+      color: "blue",
+    },
   })
 );
 
@@ -72,7 +66,10 @@ const Navbar = (props) => {
   const createDrawer = () => {
     return (
       <div>
-        <AppBar position="fixed" style={{ background: "#2F2E36", width: "100%" }}>
+        <AppBar
+          position="fixed"
+          style={{ background: "#2F2E36", width: "100%" }}
+        >
           <Toolbar>
             <Grid
               container
@@ -105,7 +102,8 @@ const Navbar = (props) => {
             </Grid>
           </Toolbar>
         </AppBar>
-        <SwipeableDrawer className={{paper: classes.drawerPaper}}
+        <SwipeableDrawer
+          className={{ paper: classes.drawerPaper }}
           open={drawer}
           onClose={() => {
             setDrawer(false);
@@ -126,16 +124,17 @@ const Navbar = (props) => {
           >
             <List className={classes.list}>
               <ListItem key={1} button divider>
-               <InfoIcon style={{marginRight: "10px"}} />  ABOUT ME
+                <InfoIcon style={{ marginRight: "10px" }} /> ABOUT ME
               </ListItem>
               <ListItem key={2} button divider>
-                <FolderSharedIcon style={{marginRight: "10px"}} />PORTFOLIO
+                <FolderSharedIcon style={{ marginRight: "10px" }} />
+                PORTFOLIO
               </ListItem>
               <ListItem key={2} button divider>
-                <AttachmentIcon style={{marginRight: "10px"}} /> RESUME
+                <AttachmentIcon style={{ marginRight: "10px" }} /> RESUME
               </ListItem>
               <ListItem key={3} button divider>
-               <ContactMailIcon style={{marginRight: "10px"}} /> CONTACT ME
+                <ContactMailIcon style={{ marginRight: "10px" }} /> CONTACT ME
               </ListItem>
             </List>
           </div>
@@ -146,7 +145,7 @@ const Navbar = (props) => {
 
   const destroyDrawer = () => {
     return (
-      <AppBar position="fixed" style={{ background: "#2F2E36", width: "100%"}}>
+      <AppBar position="fixed" style={{ background: "#2F2E36", width: "100%" }}>
         <Toolbar>
           <IconButton
             edge="start"

@@ -29,41 +29,35 @@ const useStyles = makeStyles((theme) => ({
   },
   image2: {
     alignItems: "center",
-    // paddingLeft: "100px",
-    // paddingRight:"70px",
-    // paddingTop: "25px",
   },
   title: {
     color: "white",
-    // paddingLeft: "10px"
   },
   html: {
     color: "white",
-    paddingLeft: "5px"
+    paddingLeft: "5px",
   },
   css: {
     color: "white",
-    paddingLeft: "17px"
+    paddingLeft: "17px",
   },
-  JS:{
+  JS: {
     color: "white",
   },
   post: {
     color: "white",
-    // paddingRight: "-25px"
   },
   react: {
     color: "white",
-    paddingLeft: "5px"
+    paddingLeft: "5px",
   },
   type: {
     color: "white",
-    // paddingLeft: "-15px"
   },
   git: {
     color: "white",
-    paddingLeft: "19px"
-  }
+    paddingLeft: "19px",
+  },
 }));
 
 const Experience = (props) => {
@@ -193,6 +187,7 @@ const Experience = (props) => {
             // className="code-box-shape"
           >
             <Grid item xs={3} className={classes.image}>
+              
               <img
                 src={TS}
                 width="63"

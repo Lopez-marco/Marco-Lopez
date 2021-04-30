@@ -5,7 +5,7 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
-import { Parallax } from "rc-scroll-anim"
+import { Parallax } from "rc-scroll-anim";
 
 const useStyles = makeStyles((theme) => ({
   root: {
