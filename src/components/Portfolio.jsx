@@ -29,6 +29,8 @@ const useStyles = makeStyles({
     textAlign: "center",
     paddingTop: "45px",
     color: "#DF9B3A",
+    fontWeight: "600",
+    fontSize: "1.5rem",
     paddingBottom: "45px",
   },
   card: {

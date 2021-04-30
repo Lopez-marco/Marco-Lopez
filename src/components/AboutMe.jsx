@@ -27,6 +27,8 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "45px",
     paddingBottom: "0px",
     textAlign: "center",
+    fontWeight: "600",
+    fontSize: "1.5rem",
     color: "#DF9B3A",
     backgroundColor: "transparent",
     borderColor: "",
@@ -34,6 +36,8 @@ const useStyles = makeStyles((theme) => ({
   WhereTo: {
     paddingTop: "30px",
     paddingBottom: "45px",
+    fontSize: "1.5rem",
+    fontWeight: "600",
     textAlign: "center",
     color: "#DF9B3A",
     backgroundColor: "transparent",

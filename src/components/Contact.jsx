@@ -20,6 +20,8 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "45px",
     paddingBottom: "0px",
     padding: theme.spacing(2),
+    fontSize: "1.5rem",
+    fontWeight: "600",
     textAlign: "center",
     color: "#DF9B3A",
     backgroundColor: "transparent",

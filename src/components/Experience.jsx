@@ -19,6 +19,8 @@ const useStyles = makeStyles((theme) => ({
   experience: {
     paddingTop: "35px",
     textAlign: "center",
+    fontSize: "1.5rem",
+    fontWeight: "600",
     color: "#DF9B3A",
   },
   image: {
@@ -187,7 +189,7 @@ const Experience = (props) => {
             // className="code-box-shape"
           >
             <Grid item xs={3} className={classes.image}>
-              
+
               <img
                 src={TS}
                 width="63"
