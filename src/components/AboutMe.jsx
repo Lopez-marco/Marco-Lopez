@@ -47,6 +47,10 @@ const useStyles = makeStyles((theme) => ({
   image: {
     paddingBottom: "35px",
   },
+  title: {
+    color: "white",
+    paddingLeft: "2px"
+  }
 }));
 
 const AboutMe = (props) => {
@@ -120,7 +124,7 @@ const AboutMe = (props) => {
                   title="Resume"
                 />
               </a>
-              <p>Resume</p>
+              <p className={classes.title}>Download Resume</p>
             </Grid>
             <Grid item sm={12} md={2} lg={2} className={classes.image}>
               <a href="https://github.com/Lopez-marco">
@@ -132,7 +136,7 @@ const AboutMe = (props) => {
                   title="Github"
                 />
               </a>
-              <p>git</p>
+              <p className={classes.title}>GitHub</p>
             </Grid>
             <Grid item sm={12} md={2} lg={2} className={classes.image}>
               <a href="https://www.linkedin.com/">
@@ -144,7 +148,7 @@ const AboutMe = (props) => {
                   title="Linkedin"
                 />
               </a>
-                <p>hello</p>
+                <p className={classes.title}>LinkedIn</p>
             </Grid>
             <Grid item sm={12} md={3} lg={3} className={classes.image}>
             </Grid>

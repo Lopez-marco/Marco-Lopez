@@ -33,6 +33,37 @@ const useStyles = makeStyles((theme) => ({
     // paddingRight:"70px",
     // paddingTop: "25px",
   },
+  title: {
+    color: "white",
+    // paddingLeft: "10px"
+  },
+  html: {
+    color: "white",
+    paddingLeft: "5px"
+  },
+  css: {
+    color: "white",
+    paddingLeft: "17px"
+  },
+  JS:{
+    color: "white",
+  },
+  post: {
+    color: "white",
+    // paddingRight: "-25px"
+  },
+  react: {
+    color: "white",
+    paddingLeft: "5px"
+  },
+  type: {
+    color: "white",
+    // paddingLeft: "-15px"
+  },
+  git: {
+    color: "white",
+    paddingLeft: "19px"
+  }
 }));
 
 const Experience = (props) => {
@@ -65,7 +96,7 @@ const Experience = (props) => {
                 alt="HTML5 Powered"
                 title="HTML5 Powered"
               />
-              <p>html</p>
+              <p className={classes.html}> HTML5</p>
             </Grid>
           </Parallax>
           <Parallax
@@ -81,7 +112,7 @@ const Experience = (props) => {
                 alt="CSS Logo"
                 title="CSS Logo"
               />
-              <p>html</p>
+              <p className={classes.css}>CSS</p>
             </Grid>
           </Parallax>
           <Parallax
@@ -97,7 +128,7 @@ const Experience = (props) => {
                 alt="JavaScript Logo"
                 title="JavaScript Logo"
               />
-              <p>html</p>
+              <p className={classes.JS}>JavaScript</p>
             </Grid>
           </Parallax>
           <Parallax
@@ -113,7 +144,7 @@ const Experience = (props) => {
                 alt="Node"
                 title="Node"
               />
-              <p>html</p>
+              <p className={classes.title}>Node.JS</p>
             </Grid>
           </Parallax>
         </Grid>
@@ -137,6 +168,7 @@ const Experience = (props) => {
                 alt="Postgresql Logo"
                 title="Postgresql Logo"
               />
+              <p className={classes.post}> PostgreSQL</p>
             </Grid>
           </Parallax>
           <Parallax
@@ -152,6 +184,7 @@ const Experience = (props) => {
                 alt="React Logo"
                 title="React Logo"
               />
+              <p className={classes.react}> React.js</p>
             </Grid>
           </Parallax>
           <Parallax
@@ -167,6 +200,7 @@ const Experience = (props) => {
                 alt="TypeScript Logo"
                 title="Typescript Logo"
               />
+              <p className={classes.type}> TypeScript</p>
             </Grid>
           </Parallax>
           <Parallax
@@ -176,6 +210,7 @@ const Experience = (props) => {
           >
             <Grid item xs={3} className={classes.image}>
               <img src={GIT} width="63" height="64" alt="Node" title="Node" />
+              <p className={classes.git}> Git</p>
             </Grid>
           </Parallax>
         </Grid>
