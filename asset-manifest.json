@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Lopez-marco/Newportafolio/static/css/main.5fb0d84f.chunk.css",
+    "main.js": "/Lopez-marco/Newportafolio/static/js/main.9aa209ee.chunk.js",
+    "main.js.map": "/Lopez-marco/Newportafolio/static/js/main.9aa209ee.chunk.js.map",
+    "runtime-main.js": "/Lopez-marco/Newportafolio/static/js/runtime-main.cd7ad10a.js",
+    "runtime-main.js.map": "/Lopez-marco/Newportafolio/static/js/runtime-main.cd7ad10a.js.map",
+    "static/js/2.70f16647.chunk.js": "/Lopez-marco/Newportafolio/static/js/2.70f16647.chunk.js",
+    "static/js/2.70f16647.chunk.js.map": "/Lopez-marco/Newportafolio/static/js/2.70f16647.chunk.js.map",
+    "index.html": "/Lopez-marco/Newportafolio/index.html",
+    "static/css/main.5fb0d84f.chunk.css.map": "/Lopez-marco/Newportafolio/static/css/main.5fb0d84f.chunk.css.map",
+    "static/js/2.70f16647.chunk.js.LICENSE.txt": "/Lopez-marco/Newportafolio/static/js/2.70f16647.chunk.js.LICENSE.txt",
+    "static/media/2020-06-23-18-32-lopez-marco.github.io.d2b61d15.png": "/Lopez-marco/Newportafolio/static/media/2020-06-23-18-32-lopez-marco.github.io.d2b61d15.png",
+    "static/media/2020-06-23-18-39-mal-api.firebaseapp.com (1).223e3dbe.png": "/Lopez-marco/Newportafolio/static/media/2020-06-23-18-39-mal-api.firebaseapp.com (1).223e3dbe.png",
+    "static/media/2020-09-04-22-40-mal-caroclockfront2.herokuapp.com.6167b96c.png": "/Lopez-marco/Newportafolio/static/media/2020-09-04-22-40-mal-caroclockfront2.herokuapp.com.6167b96c.png",
+    "static/media/2020-12-07-12-53-deliciosocart-server.herokuapp.com.b27c2289.png": "/Lopez-marco/Newportafolio/static/media/2020-12-07-12-53-deliciosocart-server.herokuapp.com.b27c2289.png",
+    "static/media/2021-02-24-14-19-www.templobetel.us.6d1096b8.png": "/Lopez-marco/Newportafolio/static/media/2021-02-24-14-19-www.templobetel.us.6d1096b8.png",
+    "static/media/2021-03-12-20-39-keilizcakesupplies.com (1).6416f5a3.png": "/Lopez-marco/Newportafolio/static/media/2021-03-12-20-39-keilizcakesupplies.com (1).6416f5a3.png",
+    "static/media/Daco_4562295.ca691704.png": "/Lopez-marco/Newportafolio/static/media/Daco_4562295.ca691704.png",
+    "static/media/IMG-2400.bdaf3ffb.jpg": "/Lopez-marco/Newportafolio/static/media/IMG-2400.bdaf3ffb.jpg",
+    "static/media/React.20adfb35.png": "/Lopez-marco/Newportafolio/static/media/React.20adfb35.png",
+    "static/media/css-3.463e319b.png": "/Lopez-marco/Newportafolio/static/media/css-3.463e319b.png",
+    "static/media/cv (1).b9e67ed8.png": "/Lopez-marco/Newportafolio/static/media/cv (1).b9e67ed8.png",
+    "static/media/github (1).553c6615.png": "/Lopez-marco/Newportafolio/static/media/github (1).553c6615.png",
+    "static/media/linkedin.cc1494dd.png": "/Lopez-marco/Newportafolio/static/media/linkedin.cc1494dd.png",
+    "static/media/App.css": "/Lopez-marco/Newportafolio/static/media/videoplaybackblack.f191fa41.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cd7ad10a.js",
+    "static/js/2.70f16647.chunk.js",
+    "static/css/main.5fb0d84f.chunk.css",
+    "static/js/main.9aa209ee.chunk.js"
+  ]
+}
