@@ -10,7 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
-import Static from "../assets/2020-06-23-18-32-lopez-marco.github.io.png";
+// import Static from "../assets/2020-06-23-18-32-lopez-marco.github.io.png";
 import Taste from "../assets/2020-06-23-18-39-mal-api.firebaseapp.com (1).png";
 import Car from "../assets/2020-09-04-22-40-mal-caroclockfront2.herokuapp.com.png";
 import Delicioso from "../assets/2020-12-07-12-53-deliciosocart-server.herokuapp.com.png";
