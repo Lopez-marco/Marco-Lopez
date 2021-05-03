@@ -1,7 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
-import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
@@ -70,7 +69,7 @@ const Contact = (props) => {
 
   return (
     <div className={classes.root} id="contact">
-      <Container fixed>
+      {/* <Container fixed> */}
         <Parallax
           animation={{ x: 0, opacity: 1, playScale: [0.3, 0.5] }}
           style={{ transform: "translateX(-100px)", opacity: 0 }}
@@ -112,7 +111,7 @@ const Contact = (props) => {
               <Grid item sm={12} md={6} lg={6}>
                 <TextField
                   id="standard-basic"
-                  label="Phone Number"
+                  label="Phone"
                   fullWidth={true}
                   name="phone"
                   className={classes.Text}
@@ -155,7 +154,7 @@ const Contact = (props) => {
             </Grid>
           </form>
         </Parallax>
-      </Container>
+      {/* </Container> */}
     </div>
   );
 };

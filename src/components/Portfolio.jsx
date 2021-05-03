@@ -7,15 +7,8 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
-// import Static from "../assets/2020-06-23-18-32-lopez-marco.github.io.png";
-import Taste from "../assets/2020-06-23-18-39-mal-api.firebaseapp.com (1).png";
-import Car from "../assets/2020-09-04-22-40-mal-caroclockfront2.herokuapp.com.png";
-import Delicioso from "../assets/2020-12-07-12-53-deliciosocart-server.herokuapp.com.png";
-import Templo from "../assets/2021-02-24-14-19-www.templobetel.us.png";
-import Keliz from "../assets/2021-03-12-20-39-keilizcakesupplies.com (1).png";
 import { Parallax } from "rc-scroll-anim";
 
 const useStyles = makeStyles({
@@ -34,6 +27,7 @@ const useStyles = makeStyles({
     paddingBottom: "45px",
   },
   card: {
+    alignItems: "center",
     color: "white",
     backgroundColor: "#262626",
     border: `1px solid black`,
@@ -58,12 +52,12 @@ const Portfolio = (div) => {
 
   return (
     <div className={classes.root}>
-      <Container fixed>
+      {/* <Container fixed> */}
         <Grid item sm={12} md={12}>
           <Box className={classes.portfolio}>Portfolio</Box>
         </Grid>
         <Grid container spacing={4}>
-          <Grid item sm={12} md={6} lg={4}>
+          <Grid item xs={12} sm={12} md={6} lg={4}>
             <Parallax
               animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
               style={{ transform: "translateX(-100px)", opacity: 0 }}
@@ -115,7 +109,7 @@ const Portfolio = (div) => {
                     component="img"
                     alt="Contemplative Reptile"
                     height="140"
-                    image={Taste}
+                    image="https://github.com/Lopez-marco/Marco-Lopez/blob/main/src/assets/2020-06-23-18-39-mal-api.firebaseapp.com%20(1).png?raw=true"
                     title="Contemplative Reptile"
                   />
                   <CardContent className={classes.content}>
@@ -153,7 +147,7 @@ const Portfolio = (div) => {
                     component="img"
                     alt="Contemplative Reptile"
                     height="140"
-                    image={Car}
+                    image="https://github.com/Lopez-marco/Marco-Lopez/blob/main/src/assets/2020-09-04-22-40-mal-caroclockfront2.herokuapp.com.png?raw=true"
                     title="Contemplative Reptile"
                   />
                   <CardContent className={classes.content}>
@@ -194,7 +188,7 @@ const Portfolio = (div) => {
                     component="img"
                     alt="Contemplative Reptile"
                     height="140"
-                    image={Templo}
+                    image="https://github.com/Lopez-marco/Marco-Lopez/blob/main/src/assets/2021-02-24-14-19-www.templobetel.us.png?raw=true"
                     title="Contemplative Reptile"
                   />
                   <CardContent className={classes.content}>
@@ -232,7 +226,7 @@ const Portfolio = (div) => {
                     component="img"
                     alt="Contemplative Reptile"
                     height="140"
-                    image={Keliz}
+                    image="https://github.com/Lopez-marco/Marco-Lopez/blob/main/src/assets/2021-03-12-20-39-keilizcakesupplies.com%20(1).png?raw=true"
                     title="Contemplative Reptile"
                   />
                   <CardContent className={classes.content}>
@@ -271,7 +265,7 @@ const Portfolio = (div) => {
                     component="img"
                     alt="Contemplative Reptile"
                     height="140"
-                    image={Delicioso}
+                    image="https://github.com/Lopez-marco/Marco-Lopez/blob/main/src/assets/2020-12-07-12-53-deliciosocart-server.herokuapp.com.png?raw=true"
                     title="Contemplative Reptile"
                   />
                   <CardContent className={classes.content}>
@@ -300,7 +294,7 @@ const Portfolio = (div) => {
             </Parallax>
           </Grid>
         </Grid>
-      </Container>
+      {/* </Container> */}
     </div>
   );
 };

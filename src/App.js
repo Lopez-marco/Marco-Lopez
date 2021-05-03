@@ -12,8 +12,23 @@ import Footer from "./components/Footer";
 import ReactLoading from "react-loading";
 
 function App() {
-  // const [setData] = useState([]);
   const [done, setDone] = useState(undefined);
+
+  const [containerActive, setContainerActive] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth <= 600) {
+      setContainerActive(true);
+    }
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth <= 900) {
+        setContainerActive(true);
+      } else {
+        setContainerActive(false);
+      }
+    });
+  }, []);
 
   useEffect(() => {
     setTimeout(() => {
@@ -27,93 +42,97 @@ function App() {
     }, 2000);
   }, []);
 
-  return (
-    <div className="App">
-      {!done ? (
-        <ReactLoading type={"spokes"} color={"#DF9B3A"} height={100} width={100} className="loading"/>
-      ) : (
-        <>
-          <div style={{position: "absolute", zIndex: "-1"}}>
-            <Particles
-              height="450vh"
-              width="100vw"
-              params={{
-                particles: {
-                  number: {
-                    value: 450,
-                  },
-                  size: {
-                    value: 5,
-                  },
-                },
-                interactivity: {
-                  events: {
-                    onhover: {
-                      enable: false,
-                      mode: "repulse",
+  const createContainer = () => {
+    return (
+      <>
+        {!done ? (
+          <ReactLoading
+            type={"spokes"}
+            color={"#DF9B3A"}
+            height={100}
+            width={100}
+            className="loading"
+          />
+        ) : (
+          <>
+            <div style={{position: "absolute", zIndex: "-1"}}>
+            </div>
+                    <Navbar />
+                    <Hero />
+                    <AboutMe />
+                    <Experience />
+                    <Portfolio />
+                    <Contact />
+                    <Footer />
+          </>
+        )}
+      </>
+    );
+  };
+
+  const destroyContainer = () => {
+    return (
+      <>
+        {!done ? (
+          <ReactLoading
+            type={"spokes"}
+            color={"#DF9B3A"}
+            height={100}
+            width={100}
+            className="loading"
+          />
+        ) : (
+          <>
+            <div style={{position: "absolute", zIndex: "-1"}}>
+              <Particles
+                height="450vh"
+                width="100vw"
+                params={{
+                  particles: {
+                    number: {
+                      value: 450,
+                    },
+                    size: {
+                      value: 5,
                     },
                   },
-                },
-              }}
-            />
-          </div>
-          <Container fixed>
+                  interactivity: {
+                    events: {
+                      onhover: {
+                        enable: false,
+                        mode: "repulse",
+                      },
+                    },
+                  },
+                }}
+              />
+            </div>
             <Container fixed>
               <Container fixed>
                 <Container fixed>
-                  <Navbar />
-                  <Hero />
-                  <AboutMe />
-                  <Experience />
-                  <Portfolio />
-                  <Contact />
-                  <Footer />
+                  <Container fixed>
+                    <Navbar />
+                    <Hero />
+                    <AboutMe />
+                    <Experience />
+                    <Portfolio />
+                    <Contact />
+                    <Footer />
+                  </Container>
                 </Container>
               </Container>
             </Container>
-          </Container>
-        </>
-      )}
+          </>
+        )}
+       </>
+    );
+  };
 
-      {/* <div style={{position: "absolute", zIndex: "-1"}}>
-        <Particles
-          height="480vh"
-          width="100vw"
-          params={{
-            particles: {
-              number: {
-                value: 350,
-              },
-              size: {
-                value: 5,
-              },
-            },
-            interactivity: {
-              events: {
-                onhover: {
-                  enable: false,
-                  mode: "repulse",
-                },
-              },
-            },
-          }}
-        />
-      </div>
-      <Container fixed>
-        <Container fixed>
-          <Container fixed>
-            <Container fixed>
-              <Navbar />
-              <Hero />
-              <AboutMe />
-              <Experience />
-              <Portfolio />
-              <Contact />
-              <Footer />
-            </Container>
-          </Container>
-        </Container>
-      </Container> */}
+  const Main = containerActive ? createContainer() : destroyContainer()
+
+  return (
+    <div className="App">
+      {Main}
     </div>
   );
 }

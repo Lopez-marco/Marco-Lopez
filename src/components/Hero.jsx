@@ -1,5 +1,6 @@
 import React from "react";
 import Texty from "rc-texty";
+import Typewriter from "typewriter-effect";
 
 const Hero = (props) => {
   return (
@@ -8,10 +9,43 @@ const Hero = (props) => {
         <div class="extra-padding">
           <div class="padding-area">
             <h1 class="Name-area">
-              <Texty duration="2000">Marco Lopez</Texty>{" "}
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("Marco Lopez")
+                    // .pauseFor(2500)
+                    .changeCursor(" ")
+                    .start();
+                }}
+              />
             </h1>
             <h3 class="developer">
-              <Texty duration="2000">Junior Web Developer</Texty>
+              <Typewriter
+                options={{
+                  // strings: ['Hello', 'World'],
+                  autoStart: true,
+                  loop: true,
+                }}
+                onInit={(typewriter) => {
+                  typewriter
+                  .changeCursor(" ")
+                  .pauseFor(2000)
+                  .changeCursor("|")
+                  .pauseFor(1000)
+                  .typeString("Web Developer")
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString("Back End Developer")
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString("Front End Developer")
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString("Full Stack Developer")
+                  .start();
+                  // loop: true
+                }}
+              />
             </h3>
             <p class="Quote-area">
               <Texty duration="2000">

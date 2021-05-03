@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
-import Me from "../assets/IMG-2400.jpg";
+// import Me from "../assets/IMG-2400.jpg";
 import { Parallax } from "rc-scroll-anim";
 import Resume from "../assets/cv (1).png";
 import Github from "../assets/github (1).png";
@@ -76,7 +76,7 @@ const AboutMe = (props) => {
               <Box className={classes.paper}>
                 <img
                   className="mePicture"
-                  src={Me}
+                  src="https://github.com/Lopez-marco/Marco-Lopez/blob/main/src/assets/IMG-2400.jpg?raw=true"
                   alt="Marco Lopez"
                   title="Marco Lopez"
                 ></img>
@@ -116,8 +116,8 @@ const AboutMe = (props) => {
             <Box className={classes.WhereTo}>Find Me Also</Box>
           </Grid>
           <Grid container spacing={0} className={classes.findme}>
-            <Grid item sm={12} md={3} lg={3} className={classes.image}></Grid>
-            <Grid item sm={12} md={2} lg={2} className={classes.image}>
+            {/* <Grid item sm={12} md={3} lg={3} className={classes.image}></Grid> */}
+            <Grid item xs={12} sm={12} md={4} lg={4} className={classes.image}>
               <a href="../assets/Marco Lopez.docx" download>
                 <img
                   src={Resume}
@@ -129,7 +129,7 @@ const AboutMe = (props) => {
               </a>
               <p className={classes.title}>Download Resume</p>
             </Grid>
-            <Grid item sm={12} md={2} lg={2} className={classes.image}>
+            <Grid item xs={12} sm={12} md={4} lg={4} className={classes.image}>
               <a href="https://github.com/Lopez-marco">
                 <img
                   src={Github}
@@ -141,7 +141,7 @@ const AboutMe = (props) => {
               </a>
               <p className={classes.title}>GitHub</p>
             </Grid>
-            <Grid item sm={12} md={2} lg={2} className={classes.image}>
+            <Grid item xs={12} sm={12} md={4} lg={4} className={classes.image}>
               <a href="https://www.linkedin.com/">
                 <img
                   src={Link}
@@ -153,7 +153,7 @@ const AboutMe = (props) => {
               </a>
               <p className={classes.title}>LinkedIn</p>
             </Grid>
-            <Grid item sm={12} md={3} lg={3} className={classes.image}></Grid>
+            {/* <Grid item sm={12} md={3} lg={3} className={classes.image}></Grid> */}
           </Grid>
         </Parallax>
       </Container>
