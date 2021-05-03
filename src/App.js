@@ -83,7 +83,7 @@ function App() {
           <>
             <div style={{position: "absolute", zIndex: "-1"}}>
               <Particles
-                height="180vw"
+                height="160vw"
                 width="100vw"
                 params={{
                   particles: {
