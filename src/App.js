@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 import ReactLoading from "react-loading";
 
 function App() {
-  const [data, setData] = useState([]);
+  // const [setData] = useState([]);
   const [done, setDone] = useState(undefined);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ function App() {
         .then((response) => response.json())
         .then((json) => {
           console.log(json);
-          setData(json);
+          // setData(json);
           setDone(true);
         });
     }, 2000);
