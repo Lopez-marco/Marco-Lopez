@@ -13,7 +13,6 @@ const Hero = (props) => {
                 onInit={(typewriter) => {
                   typewriter
                     .typeString("Marco Lopez")
-                    // .pauseFor(2500)
                     .changeCursor(" ")
                     .start();
                 }}
@@ -22,7 +21,6 @@ const Hero = (props) => {
             <h3 class="developer">
               <Typewriter
                 options={{
-                  // strings: ['Hello', 'World'],
                   autoStart: true,
                   loop: true,
                 }}

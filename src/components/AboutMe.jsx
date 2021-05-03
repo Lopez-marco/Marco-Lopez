@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
-// import Me from "../assets/IMG-2400.jpg";
 import { Parallax } from "rc-scroll-anim";
 import Resume from "../assets/cv (1).png";
 import Github from "../assets/github (1).png";
@@ -116,7 +115,6 @@ const AboutMe = (props) => {
             <Box className={classes.WhereTo}>Find Me Also</Box>
           </Grid>
           <Grid container spacing={0} className={classes.findme}>
-            {/* <Grid item sm={12} md={3} lg={3} className={classes.image}></Grid> */}
             <Grid item xs={12} sm={12} md={4} lg={4} className={classes.image}>
               <a href="../assets/Marco Lopez.docx" download>
                 <img
@@ -153,7 +151,6 @@ const AboutMe = (props) => {
               </a>
               <p className={classes.title}>LinkedIn</p>
             </Grid>
-            {/* <Grid item sm={12} md={3} lg={3} className={classes.image}></Grid> */}
           </Grid>
         </Parallax>
       </Container>

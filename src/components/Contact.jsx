@@ -69,7 +69,6 @@ const Contact = (props) => {
 
   return (
     <div className={classes.root} id="contact">
-      {/* <Container fixed> */}
         <Parallax
           animation={{ x: 0, opacity: 1, playScale: [0.3, 0.5] }}
           style={{ transform: "translateX(-100px)", opacity: 0 }}
@@ -154,7 +153,6 @@ const Contact = (props) => {
             </Grid>
           </form>
         </Parallax>
-      {/* </Container> */}
     </div>
   );
 };

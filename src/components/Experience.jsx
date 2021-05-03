@@ -114,7 +114,6 @@ const Experience = (props) => {
           <Parallax
             animation={{ x: 0, opacity: 1, playScale: [0.3, 0.5] }}
             style={{ transform: "translateX(-100px)", opacity: 0 }}
-            // className="code-box-shape"
           >
             <Grid item xs={3} className={classes.image}>
               <img
