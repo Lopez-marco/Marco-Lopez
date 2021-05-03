@@ -75,7 +75,7 @@ const Portfolio = (div) => {
                     component="img"
                     alt="Contemplative Reptile"
                     height="140"
-                    image={Static}
+                    image="https://github.com/Lopez-marco/Marco-Lopez/blob/main/src/assets/2020-06-23-18-32-lopez-marco.github.io.png?raw=true"
                     title="Contemplative Reptile"
                   />
                   <CardContent className={classes.content}>
