@@ -59,7 +59,7 @@ const Portfolio = (div) => {
         <Grid container spacing={4}>
           <Grid item xs={12} sm={12} md={6} lg={4}>
             <Parallax
-              animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+              animation={{ x: 0, opacity: 1, playScale: [0.0, 0.3] }}
               style={{ transform: "translateX(-100px)", opacity: 0 }}
               className="code-box-shape"
             >
@@ -99,7 +99,7 @@ const Portfolio = (div) => {
           </Grid>
           <Grid item sm={12} md={6} lg={4}>
             <Parallax
-              animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+              animation={{ x: 0, opacity: 1, playScale: [0.0, 0.3] }}
               style={{ transform: "translateY(0px)", opacity: 0 }}
               className="code-box-shape"
             >
@@ -137,7 +137,7 @@ const Portfolio = (div) => {
           </Grid>
           <Grid item sm={12} md={6} lg={4}>
             <Parallax
-              animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+              animation={{ x: 0, opacity: 1, playScale: [0.0, 0.3] }}
               style={{ transform: "translateX(100px)", opacity: 0 }}
               className="code-box-shape"
             >
@@ -178,7 +178,7 @@ const Portfolio = (div) => {
         <Grid container spacing={4}>
           <Grid item sm={12} md={6} lg={4}>
             <Parallax
-              animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+              animation={{ x: 0, opacity: 1, playScale: [0.0, 0.3] }}
               style={{ transform: "translateX(-100px)", opacity: 0 }}
               className="code-box-shape"
             >
@@ -216,7 +216,7 @@ const Portfolio = (div) => {
           </Grid>
           <Grid item sm={12} md={6} lg={4}>
             <Parallax
-              animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+              animation={{ x: 0, opacity: 1, playScale: [0.0, 0.3] }}
               style={{ transform: "translateY(0px)", opacity: 0 }}
               className="code-box-shape"
             >
@@ -255,7 +255,7 @@ const Portfolio = (div) => {
           </Grid>
           <Grid item sm={12} md={6} lg={4}>
             <Parallax
-              animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+              animation={{ x: 0, opacity: 1, playScale: [0.0, 0.3] }}
               style={{ transform: "translateX(100px)", opacity: 0 }}
               className="code-box-shape"
             >
