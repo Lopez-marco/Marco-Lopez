@@ -88,12 +88,19 @@ function App() {
                 params={{
                   particles: {
                     number: {
-                      value: 450,
+                      value: 100,
                     },
                     size: {
-                      value: 5,
+                      value: 10,
                     },
                   },
+                  line_linked: {
+            				shadow: {
+            					enable: true,
+            					color: "#3CA9D1",
+            					blur: 5
+            				}
+            			},
                   interactivity: {
                     events: {
                       onhover: {
