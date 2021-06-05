@@ -25,14 +25,14 @@ code {
 
 .Hero-Area {
   color: white;
-  background-image: url("https://github.com/Lopez-marco/Marco-Lopez/blob/main/src/assets/videoplaybackblack.gif?raw=true");
+  background-image: url("./assets/background.gif");
   background-color: transparent;
   text-align: center;
-  width: 100%;
-  height: 100%;
+  height: auto;
+  width: auto;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .padding-area {
