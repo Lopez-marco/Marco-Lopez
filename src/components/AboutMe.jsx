@@ -140,7 +140,7 @@ const AboutMe = (props) => {
               <p className={classes.title}>GitHub</p>
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4} className={classes.image}>
-              <a href="https://www.linkedin.com/">
+              <a href="https://www.linkedin.com/in/marco-lopez-hdez/">
                 <img
                   src={Link}
                   width="63"
