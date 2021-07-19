@@ -7,6 +7,7 @@ import { Parallax } from "rc-scroll-anim";
 import Resume from "../assets/cv (1).png";
 import Github from "../assets/github (1).png";
 import Link from "../assets/linkedin.png";
+import ResumeFile from "../assets/MarcoLopez.docx"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -116,7 +117,7 @@ const AboutMe = (props) => {
           </Grid>
           <Grid container spacing={0} className={classes.findme}>
             <Grid item xs={12} sm={12} md={4} lg={4} className={classes.image}>
-              <a href="../assets/Marco Lopez.docx" download>
+              <a href={ResumeFile} download>
                 <img
                   src={Resume}
                   width="63"
