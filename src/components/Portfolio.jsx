@@ -347,15 +347,15 @@ const Portfolio = (div) => {
                     component="img"
                     alt="Contemplative Reptile"
                     height="140"
-                    image="https://github.com/Lopez-marco/Marco-Lopez/blob/main/src/assets/2020-06-23-18-39-mal-api.firebaseapp.com%20(1).png?raw=true"
+                    image="https://github.com/Lopez-marco/Marco-Lopez/blob/main/src/assets/screencapture-clever-curran-ffbad0-netlify-app-2021-11-22-13_25_48.png?raw=true"
                     title="Contemplative Reptile"
                   />
                   <CardContent className={classes.content}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      API project
+                      Car Dealer
                     </Typography>
                     <Typography variant="body2" color="#7C7C7F" component="p">
-                      Taste the Food project. A website app to find recipes.
+                      Updated Version of Car-O-Clock website. Created with React, Node.Js, Postgres, Material UI. Car-O-Clock V2
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -364,7 +364,7 @@ const Portfolio = (div) => {
                     variant="contained"
                     className={classes.button}
                     size="small"
-                    href="https://mal-api.firebaseapp.com/"
+                    href="https://clever-curran-ffbad0.netlify.app/"
                     target="_blank"
                   >
                     Visit Site
