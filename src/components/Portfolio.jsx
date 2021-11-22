@@ -294,6 +294,125 @@ const Portfolio = (div) => {
             </Parallax>
           </Grid>
         </Grid>
+        <Grid container spacing={4}>
+          <Grid item xs={12} sm={12} md={6} lg={4}>
+            <Parallax
+              animation={{ x: 0, opacity: 1, playScale: [0.0, 0.3] }}
+              style={{ transform: "translateX(-100px)", opacity: 0 }}
+              className="code-box-shape"
+            >
+              {/* <Card className={classes.card}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    alt="Contemplative Reptile"
+                    height="140"
+                    image="https://github.com/Lopez-marco/Marco-Lopez/blob/main/src/assets/2020-06-23-18-32-lopez-marco.github.io.png?raw=true"
+                    title="Contemplative Reptile"
+                  />
+                  <CardContent className={classes.content}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Static Layout
+                    </Typography>
+                    <Typography variant="body2" color="#7C7C7F" component="p">
+                      This is my first project as a student atending to Eleven
+                      Fifty Academy. here you can see a miror webpage of the
+                      Hulu front page.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button
+                    variant="contained"
+                    className={classes.button}
+                    size="small"
+                    href="https://lopez-marco.github.io/staticLayout-hulus/"
+                    target="_blank"
+                  >
+                    Visit Site
+                  </Button>
+                </CardActions>
+              </Card> */}
+            </Parallax>
+          </Grid>
+          <Grid item sm={12} md={6} lg={4}>
+            <Parallax
+              animation={{ x: 0, opacity: 1, playScale: [0.0, 0.3] }}
+              style={{ transform: "translateY(0px)", opacity: 0 }}
+              className="code-box-shape"
+            >
+              <Card className={classes.card}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    alt="Contemplative Reptile"
+                    height="140"
+                    image="https://github.com/Lopez-marco/Marco-Lopez/blob/main/src/assets/2020-06-23-18-39-mal-api.firebaseapp.com%20(1).png?raw=true"
+                    title="Contemplative Reptile"
+                  />
+                  <CardContent className={classes.content}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      API project
+                    </Typography>
+                    <Typography variant="body2" color="#7C7C7F" component="p">
+                      Taste the Food project. A website app to find recipes.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button
+                    variant="contained"
+                    className={classes.button}
+                    size="small"
+                    href="https://mal-api.firebaseapp.com/"
+                    target="_blank"
+                  >
+                    Visit Site
+                  </Button>
+                </CardActions>
+              </Card>
+            </Parallax>
+          </Grid>
+          <Grid item sm={12} md={6} lg={4}>
+            <Parallax
+              animation={{ x: 0, opacity: 1, playScale: [0.0, 0.3] }}
+              style={{ transform: "translateX(100px)", opacity: 0 }}
+              className="code-box-shape"
+            >
+              {/* <Card className={classes.card}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    alt="Contemplative Reptile"
+                    height="140"
+                    image="https://github.com/Lopez-marco/Marco-Lopez/blob/main/src/assets/2020-09-04-22-40-mal-caroclockfront2.herokuapp.com.png?raw=true"
+                    title="Contemplative Reptile"
+                  />
+                  <CardContent className={classes.content}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Car-O-Clock
+                    </Typography>
+                    <Typography variant="body2" color="#7C7C7F" component="p">
+                      WebSide develop with NodeJS, React & Reactstrap. A WebSide
+                      for Vehicle Sales.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button
+                    variant="contained"
+                    className={classes.button}
+                    size="small"
+                    href="https://mal-caroclockfront2.herokuapp.com/"
+                    target="_blank"
+                  >
+                    Visit Site
+                  </Button>
+                </CardActions>
+              </Card> */}
+            </Parallax>
+          </Grid>
+        </Grid>
       {/* </Container> */}
     </div>
   );
