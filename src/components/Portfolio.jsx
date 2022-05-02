@@ -379,6 +379,45 @@ const Portfolio = (div) => {
               style={{ transform: "translateX(100px)", opacity: 0 }}
               className="code-box-shape"
             >
+              <Card className={classes.card}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    alt="Contemplative Reptile"
+                    height="140"
+                    image="https://github.com/Lopez-marco/Marco-Lopez/blob/main/src/assets/2020-12-07-12-53-deliciosocart-server.herokuapp.com.png?raw=true"
+                    title="Contemplative Reptile"
+                  />
+                  <CardContent className={classes.content}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      SalemPhotoStudio
+                    </Typography>
+                    <Typography variant="body2" color="#7C7C7F" component="p">
+                    Simple responsive Portfolio Website create with Html, Css, JS, jQuery and
+                    Bootstrap
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button
+                    variant="contained"
+                    className={classes.button}
+                    size="small"
+                    href="https://salemphotostudio.com/"
+                    target="_blank"
+                  >
+                    Visit site
+                  </Button>
+                </CardActions>
+              </Card>
+            </Parallax>
+          </Grid>
+          <Grid item sm={12} md={6} lg={4}>
+            <Parallax
+              animation={{ x: 0, opacity: 1, playScale: [0.0, 0.3] }}
+              style={{ transform: "translateX(100px)", opacity: 0 }}
+              className="code-box-shape"
+            >
               {/* <Card className={classes.card}>
                 <CardActionArea>
                   <CardMedia
