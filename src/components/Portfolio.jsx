@@ -424,7 +424,7 @@ const Portfolio = (div) => {
                     component="img"
                     alt="Contemplative Reptile"
                     height="140"
-                    image="https://github.com/Lopez-marco/Marco-Lopez/blob/main/src/assets/2020-09-04-22-40-mal-caroclockfront2.herokuapp.com.png?raw=true"
+                    image="https://github.com/Lopez-marco/Marco-Lopez/blob/main/src/assets/screencapture-engineeredinnovationgroup-2022-05-10-10_31_04.png?raw=true"
                     title="Contemplative Reptile"
                   />
                   <CardContent className={classes.content}>
