@@ -295,12 +295,12 @@ const Portfolio = (div) => {
           </Grid>
         </Grid>
         <Grid container spacing={4}>
-          <Grid item xs={12} sm={12} md={6} lg={2}>
+          {/* <Grid item xs={12} sm={12} md={6} lg={2}>
             <Parallax
               animation={{ x: 0, opacity: 1, playScale: [0.0, 0.3] }}
               style={{ transform: "translateX(-100px)", opacity: 0 }}
               className="code-box-shape"
-            >
+            > */}
               {/* <Card className={classes.card}>
                 <CardActionArea>
                   <CardMedia
@@ -333,8 +333,8 @@ const Portfolio = (div) => {
                   </Button>
                 </CardActions>
               </Card> */}
-            </Parallax>
-          </Grid>
+            {/* </Parallax>
+          </Grid> */}
           <Grid item sm={12} md={6} lg={4}>
             <Parallax
               animation={{ x: 0, opacity: 1, playScale: [0.0, 0.3] }}
@@ -412,13 +412,13 @@ const Portfolio = (div) => {
               </Card>
             </Parallax>
           </Grid>
-          <Grid item sm={12} md={6} lg={2}>
+          <Grid item sm={12} md={6} lg={4}>
             <Parallax
               animation={{ x: 0, opacity: 1, playScale: [0.0, 0.3] }}
               style={{ transform: "translateX(100px)", opacity: 0 }}
               className="code-box-shape"
             >
-              {/* <Card className={classes.card}>
+              <Card className={classes.card}>
                 <CardActionArea>
                   <CardMedia
                     component="img"
@@ -429,11 +429,11 @@ const Portfolio = (div) => {
                   />
                   <CardContent className={classes.content}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Car-O-Clock
+                      Engineered Innovation Group
                     </Typography>
                     <Typography variant="body2" color="#7C7C7F" component="p">
-                      WebSide develop with NodeJS, React & Reactstrap. A WebSide
-                      for Vehicle Sales.
+                    Simple responsive Website create with Html, Css, JS, jQuery and
+                    Bootstrap.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -442,13 +442,13 @@ const Portfolio = (div) => {
                     variant="contained"
                     className={classes.button}
                     size="small"
-                    href="https://mal-caroclockfront2.herokuapp.com/"
+                    href="http://www.engineeredinnovationgroup.com/"
                     target="_blank"
                   >
                     Visit Site
                   </Button>
                 </CardActions>
-              </Card> */}
+              </Card>
             </Parallax>
           </Grid>
         </Grid>
