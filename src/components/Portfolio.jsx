@@ -376,7 +376,7 @@ const Portfolio = (div) => {
           <Grid item sm={12} md={6} lg={4}>
             <Parallax
               animation={{ x: 0, opacity: 1, playScale: [0.0, 0.3] }}
-              style={{ transform: "translateX(100px)", opacity: 0 }}
+              style={{ transform: "translateY(0px)", opacity: 0 }}
               className="code-box-shape"
             >
               <Card className={classes.card}>
