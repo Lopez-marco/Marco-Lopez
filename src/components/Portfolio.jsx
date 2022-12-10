@@ -244,7 +244,7 @@ const Portfolio = (div) => {
                     variant="contained"
                     className={classes.button}
                     size="small"
-                    href="https://keilizcakesupplies.com/"
+                    href="https://keilizsupplies.web.app/"
                     target="_blank"
                   >
                     Visit Site
@@ -364,7 +364,7 @@ const Portfolio = (div) => {
                     variant="contained"
                     className={classes.button}
                     size="small"
-                    href="https://clever-curran-ffbad0.netlify.app/"
+                    href="https://main--clever-curran-ffbad0.netlify.app/"
                     target="_blank"
                   >
                     Visit Site
