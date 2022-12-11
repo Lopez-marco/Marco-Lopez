@@ -165,7 +165,7 @@ const Portfolio = (div) => {
                     variant="contained"
                     className={classes.button}
                     size="small"
-                    href="https://mal-caroclockfront2.herokuapp.com/"
+                    href="https://strong-dodol-ed1008.netlify.app/"
                     target="_blank"
                   >
                     Visit Site
@@ -284,10 +284,10 @@ const Portfolio = (div) => {
                     variant="contained"
                     className={classes.button}
                     size="small"
-                    href="https://deliciosocart-server.herokuapp.com/"
+                    href="#"
                     target="_blank"
                   >
-                    Visit site
+                    Not Available
                   </Button>
                 </CardActions>
               </Card>
